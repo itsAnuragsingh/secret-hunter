@@ -1,7 +1,7 @@
 {
   "name": "secret-hunter",
   "description": "A powerful CLI tool to scan your codebase for exposed API keys, secrets, and sensitive information",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "type": "module",
   "main": "./lib/scanner.js",
   "bin": {
@@ -21,7 +21,8 @@
   "author": "Anurag Singh",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^5.4.1"
+    "chalk": "^5.4.1",
+    "minimatch": "^10.0.3"
   },
   "files": [
     "bin/",
@@ -29,7 +30,7 @@
     "pattern.js",
     "README.md"
   ],
-   "keywords": [
+  "keywords": [
     "security",
     "secrets",
     "api-keys",

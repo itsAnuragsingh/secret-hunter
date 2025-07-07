@@ -7,6 +7,7 @@ import fs from 'fs';
 import path from 'path';
 import { scanFile } from '../lib/scanner.js';
 import chalk from 'chalk';
+import { minimatch } from 'minimatch';
 
 const currentDir = process.cwd();
 const fileList = [];
@@ -76,11 +77,14 @@ const ignoreFiles = [
   // Documentation
   'CHANGELOG.md', 'LICENSE', 'README.md'
 ];
+function isIgnored(file) {
+  return ignoreFiles.some(pattern => minimatch(file, pattern));
+}
 
 function walkDir(dir, fileList) {
   const files = fs.readdirSync(dir);
   for (const file of files) {
-    if (ignoreFiles.includes(file)) continue;
+    if (isIgnored(file)) continue;
     const fullPath = path.join(dir, file);
     const stats = fs.statSync(fullPath);
 
