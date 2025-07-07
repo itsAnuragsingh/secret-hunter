@@ -151,7 +151,6 @@ Scanning for secrets...
 2. Use environment variables (.env files)
 3. Add .env to your .gitignore
 4. Use secret management tools for production
-5. Consider using tools like HashiCorp Vault or AWS Secrets Manager
 
 ==================================================
 �️‍♂️ Scan completed successfully!

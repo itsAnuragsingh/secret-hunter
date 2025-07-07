@@ -19,7 +19,7 @@ const ignoreDirs = [
   'node_modules', 'bower_components', 'vendor', 'packages',
   
   // Build outputs
-  'dist', 'build', 'out', 'output', 'public', 'static', 'lib',
+  'dist', 'build', 'out', 'output', 'public', 'static',
   
   // Cache and temporary
   '.cache', '.parcel-cache', '.next', '.nuxt', 'coverage', '.nyc_output', 'tmp', 'temp',
@@ -97,7 +97,7 @@ function walkDir(dir, fileList) {
 }
 
 function printHeader() {
-  console.log(chalk.cyan('🔐 SECRET SCANNER REPORT'));
+  console.log(chalk.cyan('🔐 SECRET HUNTER REPORT'));
   console.log(chalk.cyan('=' .repeat(50)));
   console.log();
 }

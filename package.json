@@ -1,7 +1,7 @@
 {
   "name": "secret-hunter",
   "description": "A powerful CLI tool to scan your codebase for exposed API keys, secrets, and sensitive information",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "type": "module",
   "main": "./lib/scanner.js",
   "bin": {
