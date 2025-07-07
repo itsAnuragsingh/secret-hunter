@@ -1,0 +1,32 @@
+{
+  "name": "secret-scan",
+  "description": "A powerful CLI tool to scan your codebase for exposed API keys, secrets, and sensitive information",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./lib/scanner.js",
+  "bin": {
+    "secret-scan": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsAnuragsingh/secret-scan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itsAnuragsingh/secret-scan/issues"
+  },
+  "homepage": "https://github.com/itsAnuragsingh/secret-scan#readme",
+  "author": "Anurag Singh",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.4.1"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "pattern.js",
+    "README.md"
+  ]
+}
