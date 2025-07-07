@@ -49,7 +49,6 @@
   
   <br />
   
-  <img src="https://raw.githubusercontent.com/itsAnuragsingh/secret-hunter/main/assets/demo.gif" alt="Secret Hunter Demo" width="700" />
   
   <br />
   <br />
