@@ -47,7 +47,7 @@ const ignoreFiles = [
   'package-lock.json', 'yarn.lock', 'pnpm-lock.yaml', 'composer.lock', 'Gemfile.lock',
   
   // Large data files
-  '*.sql', '*.dump', '*.backup', '*.bak',
+  '*.sql', '*.dump', '*.backup', '*.bak', '.env', '.env.example', '.env.local',
   
   // Compiled files (usually minified/obfuscated)
   '*.min.js', '*.min.css', '*.bundle.js', '*.chunk.js', '*.map',
